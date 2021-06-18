@@ -1,0 +1,13 @@
+<html>
+<body>
+  <h1>Name: @Model.Name</h1>
+  <p>Calories: @Model.Calories</p>
+  <p>Ingredients: </p>
+  <ul>
+  @foreach (var ingredient in Model.Ingredients)
+  {
+    <li>@ingredient</li>
+  }
+  </ul>
+</body>
+</html>
